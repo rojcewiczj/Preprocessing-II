@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 2px dashed @navigation-border;
+   
+     h1 {
+         
+         display: block;
+         margin: 10px 40px ;
+         .keyframes(fade-in;{
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+            });
+    
+        .animation(fade-in 3.0s linear infinite alternate);
+        .text-shadow();
+       }
+       nav{
+           margin: 20px 0;
+           
+           a {
+               margin: 10px 40px 0 35px;
+               font-size: 1.2rem;
+           }
+           }
+       }
+
+ //mobile
+      
+ @media @mobile {
+    header {
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,1 +1,31 @@
 // Mixins in here
+
+.custom-button(@color) {
+    display: block;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    background-color: @color;
+    margin:  10px 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+.text-shadow (@string: 0 1px 3px rgb(158, 245, 240)) {
+	text-shadow: @string;
+}
