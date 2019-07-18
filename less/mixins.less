@@ -14,3 +14,18 @@
     border-radius: 10px;
 
 }
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+.text-shadow (@string: 0 1px 3px rgb(158, 245, 240)) {
+	text-shadow: @string;
+}

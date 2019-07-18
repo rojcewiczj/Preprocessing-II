@@ -177,6 +177,34 @@ header {
 header h1 {
   display: block;
   margin: 10px 40px ;
+  -webkit-animation: fade-in 3s linear infinite alternate;
+  -moz-animation: fade-in 3s linear infinite alternate;
+  animation: fade-in 3s linear infinite alternate;
+  text-shadow: 0 1px 3px #9ef5f0;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 header nav {
   margin: 20px 0;
@@ -220,11 +248,17 @@ header nav a {
   margin: 2% 0;
   padding: 0 0 1.5% 0;
 }
+.home .Welcome h2 {
+  text-shadow: 0 1px 3px #9ef5f0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.home .content-section h2 {
+  text-shadow: 0 1px 3px #9ef5f0;
 }
 .home .content-section .text-content {
   width: 400px;
@@ -253,6 +287,9 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+.home .content-destination h2 {
+  text-shadow: 0 1px 3px #9ef5f0;
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -266,6 +303,9 @@ header nav a {
   width: 400px;
   margin: 0 15px;
   margin-bottom: 30px;
+}
+.home .content-pick .destination h4 {
+  text-shadow: 0 1px 3px #9ef5f0;
 }
 @media (max-width: 500px) {
   .Welcome {
